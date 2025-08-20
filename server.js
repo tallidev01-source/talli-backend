@@ -21,7 +21,7 @@ const server = http.createServer(app)
 
 app.use(
   cors({
-    origin: process.env.MODE === 'prod' ? ['http://localhost:5173','http://localhost:5174'] : ['http://localhost:5173','http://localhost:5174'],
+    origin: process.env.MODE === 'prod' ? [process.env.CLIENT, process.env.CLIENT1] : ['http://localhost:5173','http://localhost:5174'],
     credentials: true,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
     allowedHeaders: "Content-Type,Authorization",
