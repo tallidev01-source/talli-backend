@@ -1,0 +1,21 @@
+{
+    "restoreTerminals.terminals": [ 
+      {
+        "splitTerminals": [
+          {
+            "name": "Backend",
+            "commands": ["", "nodemon server.js"]
+          },
+          {
+            "name": "Backend",
+            "commands": ["", ""]
+          }
+        ]
+      },
+
+    ],
+    "cSpell.words": [
+      "Reciever",
+      "Talli"
+    ]
+}
