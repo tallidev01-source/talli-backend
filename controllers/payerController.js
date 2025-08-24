@@ -71,7 +71,10 @@ class payerController {
       //   .json({ message: "Payer added successfully", payer: newPayer });
     } catch (error) {
       console.error("Error adding payer:", error);
-      res.status(500).json({ error: "Failed to add payer" });
+      // res.status(500).json({ error: "Failed to add payer" });
+      return responseReturn(res, 500, {
+          error: "Failed to add payer",
+        });
     }
   };
   getPayers = async (req, res) => {

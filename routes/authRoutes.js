@@ -14,4 +14,4 @@ router.post("/change-user-password",authMiddleware, authController.changePasswor
 
 
 
-module.exports = router;
+module.exports = router
